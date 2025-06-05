@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 16px 18px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #CCC
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #39693D;
+                }
+    </style>
+
+</head>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Title Page -->
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="hello.html">Home</a></li>
+            <li><a class="active" href="wallawalla.html">Walla Walla</a></li>
+            <li><a href="olympia.html">Capitol</a></li>
+            <li><a href="Spokane.html">Spokane</a></li>
+            <li><a href="comparison.html">Compare</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- grid for main walla image -->
+    <style>
+        #walla-grid {
+            text-align: left;
+            width: auto;
+            height: auto;
+            background: white;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+            #walla-grid > div {
+                background: white;
+            }
+    </style>
+    <!-- walla walla list-->
+    <style>
+        ol {
+          list-style-type: square;
+          margin: 5px;
+          padding: 5px;
+          width: 200px;
+        } 
+
+        li a {
+          display: block;
+          background-color: #dddddd;
+        }
+    </style>
+
+    <!-- A.1 Header -->
+    <header>
+        <h1>Walla Walla</h1>
+        <p>A Place So Nice They Named It Twice</p>
+    </header>
+
+    <!-- A. A section -->
+    <section>
+
+        <div id="walla-grid">
+            <div>
+                <img src="https://assets.vogue.com/photos/5ac7f427f7e0937aae45b143/master/w_2560%2Cc_limit/00-story-image-washington-state-wine-country-guide.jpg"
+                     alt="walla walla mtns" width="712" height="700">
+            </div>
+            <!-- A.2 An Aside -->
+            <aside>
+                <h3>Population:</h3> <p>33,927</p>
+                <h3>Year Walla Walla was Incorporated:</h3> <p>1862</p>
+                <h3>Region of the State: </h3> <p>Southeastern Washington</p>
+                <h3>Classification of city: </h3> <p>Suburban</p>
+                <h3>Average Income Walla Walla: </h3><p> $72,427 </p>
+                <h3>Top tourist atractions are: </h3>
+
+                <!-- B.3 Unordered List-->
+                <div>
+                    <ol>
+                        <!-- or type="I" for Roman numerals -->
+                        <li>Wineries</li>
+                        <li>Walla Walla Sweet Onions</li>
+                        <li>Golf</li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <img src="https://www.planetizen.com/files/images/shutterstock_1285289965.jpg" alt="vineyard" width="712" height="350" align="left">
+        <img src="https://westernartandarchitecture.com/wp-content/uploads/2018/09/wanderings_2-min.jpg" alt="Overhead Shot" width="712" height="350">
+
+
+    </section>
+</body>
+</html lang="en">

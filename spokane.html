@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 16px 18px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #CCC
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #39693D;
+                }
+    </style>
+
+</head>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Title Page -->
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="hello.html">Home</a></li>
+            <li><a href="wallawalla.html">Walla Walla</a></li>
+            <li><a href="olympia.html">Capitol</a></li>
+            <li><a class="active" href="Spokane.html">Spokane</a></li>
+            <li><a href="comparison.html">Compare</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- grid for main olympia image -->
+    <style>
+        #spokane-grid {
+            text-align: left;
+            width: auto;
+            height: auto;
+            background: white;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+            #spokane-grid > div {
+                background: white;
+            }
+    </style>
+    <style>
+        ol {
+            list-style-type: square;
+            margin: 5px;
+            padding: 5px;
+            width: 80px;
+        }
+
+        li a {
+            display: block;
+            background-color: #dddddd;
+        }
+    </style>
+
+    <!-- A.1 The header -->
+    <header>
+        <h1>Spokane</h1>
+        <p>The City Where We All Belong.</p>
+    </header>
+
+    <!-- A.2 The Section -->
+    <section>
+
+        <div id="spokane-grid">
+            <div>
+                <img src="https://static.spokanecity.org/photos/2015/11/03/spokane/16x10/Full/spokane.jpg"
+                     alt="Nighttime Spokane" width="900" height="700">
+            </div>
+
+            <!-- A.2 The Aside -->
+            <aside>
+                <!-- A. Information about city -->
+                <h3>Population:</h3> <p>229,071</p>
+                <h3>Year Spokane was Incorporated:</h3> <p>1881</p>
+                <h3>Region of the State: </h3> <p>Eastern Washington</p>
+                <h3>Classification of city: </h3> <p>Dense Suburban</p>
+                <h3>Average Income Spokane: </h3><p> $77,244 </p>
+
+                <!-- B.2 Ordered List-->
+                <h4>Outdoor Activities:</h4>
+                <ol>
+                    <!-- or type="I" for Roman numerals -->
+                    <li>Hiking</li>
+                    <li>Biking</li>
+                    <li>Kayaking</li>
+                    <li>Skiing</li>
+                </ol>
+            </aside>
+        </div>
+
+        <!-- More images of Spokane -->
+        <img src="https://static.cozycozy.com/images/catalog/bg2/horizontal-spokane.jpg"
+             alt="Image of Spokane Waterfront" width="712" height="350" align="left">
+        <img src="https://www.tripsavvy.com/thmb/xDrtLdHqXn2G3kRrqbKRnFdKDAc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/untitled1of1-12-646e3a35a57745aaac3d49c1e3a59409.jpg"
+             alt="Image of Spokane Falls" width="712" height="350">
+
+    </section>
+
+</body>
+
+</html>
+

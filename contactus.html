@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 16px 18px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #CCC
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #39693D;
+                }
+    </style>
+
+    <!-- style for page -->
+    <style>
+        form {
+            margin: 0;
+            padding: 0;
+            border: 1px solid none;
+            background-color: white;
+        }
+
+        label {
+            display: block;
+            color: #000;
+            text-align: Center;
+            padding: 16px 18px;
+            text-decoration: none;
+        }
+
+        backgroundImage {
+            position: absolute;
+        }
+    </style>
+
+
+</head>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Title Page -->
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="hello.html">Home</a></li>
+            <li><a href="wallawalla.html">Walla Walla</a></li>
+            <li><a href="olympia.html">Capitol</a></li>
+            <li><a href="Spokane.html">Spokane</a></li>
+            <li><a href="comparison.html">Compare</a></li>
+            <li><a class="active" href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <header>
+            <h1 align="center">Contact Us</h1>
+        </header>
+        <form id="form" align="center" onclick="return checkEmail()" onsubmit="return checkEmail()">
+            <label for="Fname">First Name:</label>
+            <input type="text" name="Fname" id="Fname" placeholder="Enter First Name">
+
+            <label for="Lname">Last Name:</label>
+            <input type="text" name="Lname" id="Lname" placeholder="Enter Last Name">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter Email">
+
+            <label for="verifyemail"> Verify Email:</label>
+            <input type="text" name="verifyemail" id="verifyemail" placeholder="Re-Enter Email">
+
+            <label for="question">Questions:</label>
+            <textarea name="question" id="question" placeholder="Enter any questions" onclick="validation()"></textarea>
+
+            <p></p>
+            <input type="submit" value="Submit">
+
+            <span id="text"></span>
+        </form>
+    </div>
+
+    <style>
+        #image-grid {
+            text-align: left;
+            width: auto;
+            height: auto;
+            background: lightgray;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+            #image-grid > div {
+                background: lightgray;
+            }
+    </style>
+    <section>
+
+        <div id="image-grid">
+            <div>
+                <img src="https://www.traveloffpath.com/wp-content/uploads/2022/08/washington-state-autumn-leaves.jpg.webp"
+                     alt="Image of Washington" width="750" height="700">
+            </div>
+            <!-- A.2 An Aside -->
+            <aside>
+                <h3 align="center">Thank You</h3>
+                <p align="center">For taking the time to learn about our beautiful state. We hope you visit soon!</p>
+            </aside>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">function validation() {
+            let form = document.forms[0];
+            var email = document.getElementById("email").value;
+            var vEmail = document.getElementById("verifyemail").value;
+
+            var text = document.getElementById("text");
+
+            if (vEmail === email) {
+                text.innerHTML = "Email is Valid";
+                text.style.color = "green";
+                return true;
+            }
+            else {
+                text.innerHTML = "Email is invalid";
+                text.style.color = "red";
+                return false;
+            }
+        }</script>
+</body>
+</html>

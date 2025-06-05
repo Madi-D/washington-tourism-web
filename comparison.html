@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #000;
+                text-align: center;
+                padding: 16px 18px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #CCC
+                }
+
+                li a.active {
+                    color: white;
+                    background-color: #39693D;
+                }
+    </style>
+    <style>
+        table {
+            font-family:'Times New Roman', serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #000000;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Title Page -->
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="hello.html">Home</a></li>
+            <li><a href="wallawalla.html">Walla Walla</a></li>
+            <li><a href="olympia.html">Capitol</a></li>
+            <li><a href="Spokane.html">Spokane</a></li>
+            <li><a class="active" href="comparison.html">Compare</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 algin="center">City Satistics Comparison</h1>
+    </header>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <table style="width:100%">
+        <tr>
+            <th></th>
+            <th>Walla Walla</th>
+            <th>Olympia</th>
+            <th>Spokane</th>
+        </tr>
+        <!-- Population -->
+        <tr>
+            <td>Population</td>
+            <td>33,927</td>
+            <td>55,919</td>
+            <td>229,071</td>
+        </tr>
+        <!-- Year inc. -->
+        <tr>
+            <td>Year Incorporated</td>
+            <td> 1862 </td>
+            <td>1859 </td>
+            <td>1881</td>
+        </tr>
+        <!-- Region -->
+        <tr>
+            <td>Region</td>
+            <td> Southeastern Washington </td>
+            <td>Western Washington </td>
+            <td> Eastern Washington </td>
+        </tr>
+        <!-- City Class. -->
+        <tr>
+            <td>City Classification</td>
+            <td> Suburban </td>
+            <td>Urban</td>
+            <td>Dense Suburban</td>
+        </tr>
+        <!-- Avg. income -->
+        <tr>
+            <td>Average Income</td>
+            <td> $72,427 </td>
+            <td> $85,315 </td>
+            <td> $77,244 </td>
+        </tr>
+    </table>
+    <!-- grid for image -->
+    <style>
+        #tablepage-grid {
+            text-align: left;
+            width: auto;
+            height: auto;
+            background: white;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+            #tablepage-grid > div {
+                background: white;
+            }
+    </style>
+    <section>
+
+        <div id="tablepage-grid">
+            <div>
+                <img src="https://www.traveloffpath.com/wp-content/uploads/2022/08/washington-state-autumn-leaves.jpg.webp"
+                     alt="Image of Washington" width="700" height="700">
+            </div>
+            <!-- A.2 An Aside -->
+            <aside>
+                <h3>Walla Walla:</h3> <p>Most commonly known for its wineries and sweet onions.</p>
+                <h3>Olympia:</h3> <p>Most commonly known for being the capitol of Washington.</p>
+                <h3>Spokane: </h3> <p>Most commonly known for its plethera of outdoor activities.</p>
+            </aside>
+        </div>
+
+    </section>
+
+</body>
+<!-------------------------------------------------------------------------------------------------------------------->
+</html>

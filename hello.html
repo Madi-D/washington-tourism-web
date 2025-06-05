@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>My First Webpage</title>
+        <link rel="stylesheet" href="styles.css">
+        
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
+            }
+
+            li {
+                float: left;
+            }
+
+                li a {
+                    display: block;
+                    color: #000;
+                    text-align: center;
+                    padding: 16px 18px;
+                    text-decoration: none;
+                }
+
+                    li a:hover:not(.active) {
+                        background-color: #CCC
+                    }
+
+                    li a.active {
+                        color: white;
+                        background-color: #39693D;
+                    }
+        </style>
+
+    </head>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Title Page -->
+    <body>
+        <nav>
+            <ul class="menu">
+                <li><a class="active" href="hello.html">Home</a></li>
+                <li><a href="wallawalla.html">Walla Walla</a></li>
+                <li><a href="olympia.html">Capitol</a></li>
+                <li><a href="Spokane.html">Spokane</a></li>
+                <li><a href="comparison.html">Compare</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- text style -->
+        <style>
+            .image-container {
+                margin: 0%;
+                position: relative;
+            }
+
+            /* text box style */
+            .text-container {
+                position: center;
+                color: rgb(255, 255, 255);
+                left: 18rem;
+                top: 2rem;
+                background-color: #292929;
+                padding: 0 1rem;
+            }
+
+            .welcome-txt {
+                position: absolute;
+                top: 225px;
+                left: 650px;
+            }
+
+            .washington-txt {
+                position: absolute;
+                top: 250px;
+                left: 500px;
+            }
+
+            .evergreen-txt {
+                position: absolute;
+                top: 400px;
+                left: 425px;
+            }
+        </style>
+
+        <!-- text over image -->
+        <header>
+            <div class="image-container">
+                <img src="https://media.tacdn.com/media/attractions-content--1x-1/10/44/b4/09.jpg" alt="mountains" width="1425" height="700">
+                <div class="text-container">
+                    <div class="welcome-txt">
+                        <!-- C.1 Font-family-->
+                        <h3 style="font-family:'Times New Roman'" align="center">Welcome To</h3>
+                    </div>
+                    <!-- C.4 Class used to style #1 -->
+                    <div class="washington-txt">
+                        <h1 style="font-size:500%; color:white; background:darkolivegreen; border-width:3px; border-style:solid; border-color:#000000;" align="center">Washington</h1>
+                    </div>
+                    <!-- C.4 Class used to style #2 -->
+                    <div class="evergreen-txt">
+                        <h1 style="font-size:400%; color:darkolivegreen; background:white; border-width:3px; border-style:solid; border-color:#000000;" align="center">The Evergreen State</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- grid for palouse falls section -->
+        <style>
+            #palouse-grid {
+                text-align: center;
+                width: auto;
+                height: auto;
+                background: lightgray;
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+                #palouse-grid > div {
+                    background: lightgray;
+                }
+        </style>
+            <div id="palouse-grid">
+
+                <!-- text style -->
+                <style>
+                    .image-container {
+                        margin: 0%;
+                        position: relative;
+                    }
+
+                /* text box style */
+                    .text-container {
+                        position: center;
+                        color: rgb(0, 0, 0);
+                        left: 18rem;
+                        top: 2rem;
+                        background-color: #292929;
+                        padding: 0 1rem;
+                    }
+
+                .intro-txt {
+                    position: absolute;
+                    top: 1000px;
+                    left: 100px;
+                }
+                </style>
+                <!-- text over image #2 -->
+                <div class="image2-container">
+                    <img src="https://media.cntraveler.com/photos/640b6d6437ae7ebae5a9f0f6/16:9/w_2560%2Cc_limit/Palouse%2520Falls%2520State%2520Park_GettyImages-1039343980.jpg"
+                        alt="Palouse Falls" width="800" height="700">
+                    <div class="text2-container">
+                        <div class="intro-txt">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <aside>
+                        <p>
+                            Located in the Pacific Northwest region of the United States, the state of Washington is known for its stunning landscapes, Washington has lush forests,
+                            snow capped mountains, and chilly coastlines. The iconic Mount Rainier cuts through the skyline, while the Puget Sound ripples its way through the evergreen scenery.
+                        </p>
+                        <p>
+                            Washington is home to dynamic cities such as Seattle, a global tech hub with a rich musical history.
+                        </p>
+                        <p>
+                            Spokane, a city surrounded by outdoor adventures.
+                        </p>
+                        <p>
+                            Walla Walla, a town known for its sweet onions and wide variety of wineries.
+                        </p>
+                        <p>
+                            Whether exploring the urban pulse or embracing the tranquility of nature, Washington offers a unique blend of experiences that
+                            captivate residents and visitors alike.
+                        </p>
+                        <p>
+                            Check out <a href="https://parks.wa.gov/find-parks/state-parks/palouse-falls-state-park-heritage-site" target="_blank" rel="noopener noreferrer">Palouse Falls</a> for more.
+                        </p>
+                    </aside>
+                </section>
+                </div>
+            
+        <style>
+            #grid-container {
+                width: auto;
+                height: auto;
+                background: lightgray;
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+                #grid-container > div {
+                    background: lightgray;
+                }
+        </style>
+
+        <!-- text style -->
+        <style>
+            .cityimage-container {
+                margin: 0%;
+                position: relative;
+            }
+
+            /* text box style */
+            .citytext-container {
+                position: center;
+                color: rgb(255, 255, 255);
+                left: 18rem;
+                top: 2rem;
+                background-color: #292929;
+                padding: 0 1rem;
+            }
+
+            .walla-txt {
+                position: absolute;
+                top: 1600px;
+                left: 175px;
+            }
+
+            .capitol-txt {
+                position: absolute;
+                top: 1600px;
+                left: 700px;
+            }
+
+            .spokane-txt {
+                position: absolute;
+                top: 1600px;
+                left: 1150px;
+            }
+        </style>
+
+        <!-- text over image -->
+        <!-- C.4 ID used to format -->
+        <div id="grid-container">
+            <div class="cityimg-container">
+                <a href="wallawalla.html"><img src="https://www.thehealthcenterww.org/images/slides/wallawalla2016.jpg" alt="mountains" width="475" height="233" align="left"/></a>
+                <a href="olympia.html">
+                    <img src="https://www.thoughtco.com/thmb/_ZNhs9lhwfoos1WoYBygoL03g6c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-497322993-598b2ad403f4020010ae0a08.jpg"
+                         alt="mountains" width="475" height="233" align="middle" />
+                </a>
+                <a href="Spokane.html"><img src="https://static.cozycozy.com/images/catalog/bg2/horizontal-spokane.jpg" alt="mountains" width="474" height="233" align="right"/></a>
+                <div class="citytext-container">
+                    <div class="walla-txt">
+                        <h3>Walla Walla</h3>
+                    </div>
+
+                    <div class="capitol-txt">
+                        <h3>Capitol</h3>
+                    </div>
+
+                    <div class="spokane-txt">
+                        <h3>Spokane</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+    </body>
+    </html>
