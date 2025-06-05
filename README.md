@@ -16,4 +16,4 @@ A responsive, accessible tourism website built to highlight the major regions an
 - Simple, clean visual design
 
 ## How to View
-Live Site: [Insert GitHub Pages URL here once deployed]
+Live Site: https://madi-d.github.io/washington-tourism-web/index.html
